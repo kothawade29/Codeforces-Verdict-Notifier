@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verdict Notifyier</title>
+</head>
+<style>
+    * {
+        padding: 3px;
+    }
+    a {
+        padding: 0px;
+    }
+    select {
+        min-width: 100%;
+    }
+    #status {
+        clear: both;
+        height: 20px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        color: crimson;
+    }
+    button {
+        clear: both;
+        width: 100%;
+        margin: 5px auto;
+    }
+    p {
+        clear:both;
+        width: 100%;
+        margin: 5px auto;
+        text-align: center;
+    }
+    
+</style>
+<body>
+    <div>
+        <h3>Notification Type</h2>
+        <select id="sound">
+          <option value="tts">Speak</option>
+          <option value="notification">Only Notification</option>
+        </select>
+    </div>
+    <div>
+        <h3>Verdict Type</h2>
+        <select id="type">
+            <option value="direct_result">Only Verdict</option>
+            <option id="detail_result">Verdict + Time + Space</option>
+        </select>
+    </div>
+    <div id="status"></div>
+    <br>
+    <button id="save_input">Save Details</button>
+    Created by <a href="#" id="linkedIn">Atharva Kothawade</a>
+    <script src="options.js"></script>
+</body>
+</html>
